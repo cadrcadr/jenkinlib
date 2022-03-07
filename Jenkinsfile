@@ -7,7 +7,7 @@ def mytools = new org.devops.tools()
 
 
 pipeline {
-    agent { node {  label "master" }}
+    agent { node {  label "main" }}
 
     stages {
         //下载代码
