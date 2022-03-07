@@ -1,12 +1,16 @@
-package org.devops
+package org.devops 
+
 
 //saltstack
-
 def SaltDeploy(hosts,func){
-  sh " salt \ "${hosts}\" ${func} "
+    sh " salt \"${hosts}\" ${func} "
 }
 
-// ansible
+
+//ansible
+
 def AnsibleDeploy(hosts,func){
-  sh "ansible ${func} ${hosts}" 
+    sh " ansible ${func} ${hosts}"
+    
+    
 }
